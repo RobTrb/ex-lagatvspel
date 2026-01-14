@@ -4,9 +4,9 @@
 }
 
 .header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  justify-content: space-between;
   padding: 1rem 2rem;
   color: var(--foreground);
   flex-wrap: wrap;
@@ -15,6 +15,7 @@
 .logo {
   height: 120px;
   width: auto;
+  grid-column: 1;
 }
 
 .headerTitle {
@@ -34,6 +35,8 @@
   border: none;
   cursor: pointer;
   padding: 0.5rem;
+  grid-column: 3;
+  justify-self: end;
 }
 
 .hamburger span {
@@ -45,27 +48,39 @@
 }
 
 .nav {
-  flex-grow: 1;
-  margin-left: 2rem;
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
 }
 
 .navList {
   display: flex;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0;  
   gap: 2rem;
+  justify-content: center;
 }
 
 .navList a {
   text-decoration: none;
-  color: var(--foreground);
-  font-weight: 500;
-  transition: color 0.3s;
+  color: black;
+  font-weight: 700;
+  transition: color 0.3s, border-color 0.3s;
+  padding: 1rem;
+  background-color: #6abdad;
+  border: solid 2px transparent;
+  border-radius: 25px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .navList a:hover {
-  color: #0070f3;
+  color: #a400a2;
+  border-color: #a400a2;
 }
 
 .footer {
@@ -92,8 +107,13 @@
     margin-top: 0;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
-    order: 3;
+  }
+
+  .nav a {
+    color: var(--foreground);
+    font-weight: 500;
+    padding: 0rem;
+    background-color: transparent;    
   }
 
   .navOpen {
