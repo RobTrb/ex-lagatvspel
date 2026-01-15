@@ -1,3 +1,32 @@
+@media (min-width: 600px) {
+  .navList a {
+    background: transparent;
+    color: var(--font-color);
+    border: none;
+    padding: 0.5rem 1.2rem;
+    font-weight: 500;
+    border-radius: 2rem;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: none;
+    cursor: pointer;
+  }
+  .navList a.active {
+    background-color: #6abdad;
+    color: black;
+    border: solid 2px transparent;
+    border-radius: 50px;
+    transition: color 0.3s;
+    padding: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .navList a.active:hover {
+    color: #a400a2;
+    border: solid 2px transparent;
+  }
+}
+
 .headerContainer {
   background-color: var(--background);
   border-bottom: 1px solid var(--border);
@@ -57,25 +86,37 @@
   display: flex;
   list-style: none;
   padding: 0;
-  margin: 0;  
+  margin: 0;
   gap: 2rem;
   justify-content: center;
 }
 
 .navList a {
+  background: transparent;
+  color: var(--font-color);
   text-decoration: none;
-  color: black;
   font-weight: 700;
-  transition: color 0.3s, border-color 0.3s;
+  border: none;
+  transition: color 0.3s;
   padding: 1rem;
-  background-color: #6abdad;
-  border: solid 2px transparent;
-  border-radius: 25px;
   width: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+}
+
+.active {
+  background-color: #6abdad;
+  color: black;
+  border: solid 2px transparent;
+  border-radius: 50px;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.active:hover {
+  color: #a400a2;
+  border-color: #a400a2;
 }
 
 .navList a:hover {
@@ -113,7 +154,7 @@
     color: var(--foreground);
     font-weight: 500;
     padding: 0rem;
-    background-color: transparent;    
+    background-color: transparent;
   }
 
   .navOpen {

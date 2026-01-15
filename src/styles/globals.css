@@ -2,6 +2,8 @@
   --background: #ffffff;
   --foreground: #171717;
   --border: #0a0a0a;
+  --box: color-mix(in srgb, #ffffff, transparent 25%);
+  --font-color: #000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -9,6 +11,8 @@
     --background: #0a0a0a;
     --foreground: #ededed;
     --border: #ffffff;
+    --box: color-mix(in srgb, #333, transparent 20%);
+    --font-color: #ffffff;
   }
 }
 
