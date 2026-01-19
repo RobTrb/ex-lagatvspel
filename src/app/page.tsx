@@ -1,4 +1,4 @@
-import styles from "@/styles/home/home.module.css";
+import styles from "@/styles/layout.module.css";
 import InfoBoxTopHome from "@/components/home/InfoBoxTopHome";
 import InfoBoxBottomHome from "@/components/home/InfoBoxBottomHome";
 import ContentHome from "@/components/home/ContentHome";

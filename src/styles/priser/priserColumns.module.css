@@ -1,0 +1,45 @@
+.priserColumn {
+    width: 100%;
+    padding: 3rem;
+    background-color: color-mix(in srgb, #333, transparent 20%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    border: solid 1px var(--border);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);   
+}
+
+.priserColumn h2 {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.spanLine {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+.priserColumn ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;       
+}
+
+.priserColumn ul li {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+}
+
+.priserColumn ul li:last-child {
+    border-bottom: none;
+}

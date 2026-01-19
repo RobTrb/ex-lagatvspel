@@ -3,10 +3,11 @@
     width: 100%;
     max-width: 500px;
     margin-bottom: 4rem;
-    border: 1px solid white;
+    border: solid 1px var(--border);
     border-radius: 50px;
     overflow: hidden;
     display: flex;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); 
 }
 
 .repairImage {

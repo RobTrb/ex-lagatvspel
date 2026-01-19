@@ -1,0 +1,53 @@
+.priserContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+    width: 100%;
+    margin-bottom: 3rem;    
+}
+
+.priserH1 {
+    padding-bottom: 3rem;;
+}
+
+.buttonLink {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  transition: color 0.3s, border-color 0.3s;
+  padding: 1rem;
+  background-color: #6abdad;
+  border: solid 2px transparent;
+  border-radius: 50px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 1rem;
+}
+
+.buttonLink:hover {
+  color: #a400a2;
+  border-color: #a400a2;
+}
+
+@media (max-width: 900px) {
+    .priserContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .priserContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .buttonLink {
+    padding: 1.5rem;
+    width: 200px;
+    font-size: 1rem;
+    margin-top: 1rem
+  }
+}
