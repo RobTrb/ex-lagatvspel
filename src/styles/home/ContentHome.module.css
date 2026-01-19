@@ -44,6 +44,11 @@
   align-self: center;
 }
 
+.buttonLink:hover {
+  color: #a400a2;
+  border-color: #a400a2;
+}
+
 @media (max-width: 600px) {
 
   .servicesContent {
@@ -59,15 +64,5 @@
 
   .servicesImgContainer {
     max-width: 100%;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .page {
-    --background: #000;
-    --foreground: #000;
-
-    --text-primary: #000;
-    --text-secondary: #666;
   }
 }

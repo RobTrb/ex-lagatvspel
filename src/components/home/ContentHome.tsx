@@ -1,4 +1,4 @@
-import styles from "@/styles/ContentHome.module.css";
+import styles from "@/styles/home/ContentHome.module.css";
 
 export default function ContentHome() {
   return (

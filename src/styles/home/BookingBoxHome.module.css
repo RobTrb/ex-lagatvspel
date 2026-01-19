@@ -1,0 +1,98 @@
+.bookingContainer {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 4rem;
+    border: 1px solid white;
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+}
+
+.repairImage {
+    width: 100%;    
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.infoBoxOverlay {
+    position: absolute;
+    inset: 0;
+    background-color: color-mix(in srgb, #333, transparent 10%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.bookingContainer h2 {
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.bookingContainer p {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    margin: 0;
+    max-width: 600px;
+}
+
+.buttonLink {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    padding: 1rem;
+    background-color: #6abdad;
+    border: solid 2px transparent;
+    border-radius: 50px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.buttonLink:hover {
+    color: #a400a2;
+    border-color: #a400a2;
+    background-color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    .bookingContainer {
+        border-radius: 25px;
+        width: 98%;
+        max-width: 98%;
+    }
+
+    .repairImage {
+        min-height: 350px;
+        object-fit: cover;
+    }
+    
+    .contentWrapper {
+        padding: 1rem;
+    }
+
+    .bookingContainer h2 {
+        font-size: 1.4rem;
+    }
+
+    .bookingContainer p {
+        font-size: 0.95rem;
+    }
+}

@@ -1,4 +1,4 @@
-import styles from "@/styles/InfoBoxBottomHome.module.css";
+import styles from "@/styles/home/InfoBoxBottomHome.module.css";
 
 export default function InfoBoxBottomHome() {
   return (

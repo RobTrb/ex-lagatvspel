@@ -1,0 +1,56 @@
+.page {
+  --background: #fafafa;
+  --foreground: #fff;
+
+  --text-primary: #000;
+  --text-secondary: #666;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-geist-sans);
+  background-color: var(--background);
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  max-width: 90%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--foreground);
+  padding: 120px 60px;
+  padding-bottom: 0px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  a.primary:hover {
+    background: var(--button-primary-hover);
+    border-color: transparent;
+  }
+
+  a.secondary:hover {
+    background: var(--button-secondary-hover);
+    border-color: transparent;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 48px 10px;
+    max-width: 100%;
+  } 
+}
+
+@media (prefers-color-scheme: dark) {
+  .page {
+    --background: #000;
+    --foreground: #000;
+
+    --text-primary: #000;
+    --text-secondary: #666;
+  }
+}

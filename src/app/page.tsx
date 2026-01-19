@@ -1,26 +1,20 @@
-import styles from "../styles/home.module.css";
-import InfoBoxTopHome from "@/components/InfoBoxTopHome";
-import InfoBoxBottomHome from "@/components/InfoBoxBottomHome";
-import ContentHome from "@/components/ContentHome";
+import styles from "@/styles/home/home.module.css";
+import InfoBoxTopHome from "@/components/home/InfoBoxTopHome";
+import InfoBoxBottomHome from "@/components/home/InfoBoxBottomHome";
+import ContentHome from "@/components/home/ContentHome";
+import BookingBoxHome from "@/components/home/BookingBoxHome";
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <div className={styles.bannerContainer}>
-        <img
-          src="/img/Banner-large.webp"
-          alt="LagaTVSpel banner futuristic consoles"
-          className={styles.banner}
-        />
-        <div className={styles.infoBoxOverlay}>
-          <InfoBoxTopHome />
-        </div>
-      </div>
+      <InfoBoxTopHome />
       <main className={styles.main}>
         <ContentHome />
-      </main>      
+      </main>
       <InfoBoxBottomHome />
-      <main className={styles.main}></main>
+      <main className={styles.main}>
+        <BookingBoxHome />
+      </main>
     </div>
   );
 }
