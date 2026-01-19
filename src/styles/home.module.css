@@ -87,6 +87,27 @@
   object-fit: cover;
 }
 
+.buttonLink {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  transition: color 0.3s, border-color 0.3s;
+  padding: 1rem;
+  background-color: #6abdad;
+  border: solid 2px transparent;
+  border-radius: 50px;
+  width: 150px;
+  display: flex;  
+  justify-content: center;
+  box-sizing: border-box;
+  align-self: center;
+}
+
+.buttonLink:hover {
+  color: #a400a2;
+  border-color: #a400a2;
+}
+
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
     background: var(--button-primary-hover);
