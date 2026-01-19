@@ -12,7 +12,7 @@ export default function InfoBoxTopHome() {
         <div className={styles.container}>
           <h1 className={styles.title}>Välkommen till konsolspecialisten!</h1>
           <p className={styles.description}>
-            Vi på LagaTVSpel erbjuder konsolreparation alternativt modifikation.
+            Vi på LagaTVSpel i Malmö erbjuder konsolreparation alternativt modifikation.
             Vill du en unik handkontroll eller behöver din konsol repareras?
           </p>
           <p className={styles.description}>
