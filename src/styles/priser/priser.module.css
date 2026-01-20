@@ -26,6 +26,7 @@
   justify-content: center;
   box-sizing: border-box;
   margin: 1rem;
+  margin-bottom: 3rem;
 }
 
 .buttonLink:hover {

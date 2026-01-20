@@ -4,13 +4,13 @@ import PsPriser from "@/components/priser/PsPriser";
 import SwPriser from "@/components/priser/SwPriser";
 import XboxPriser from "@/components/priser/XboxPriser";
 import BookingBoxHome from "@/components/home/BookingBoxHome";
+import Banner from "@/components/priser/PriserBanner";
 
 export default function Priser() {
   return (
     <div className={styles.page}>
-      <main className={styles.main}>
-        <h1 className={priserStyles.priserH1}>Våra priser</h1>
-        <h3>Här nedan har ni vår aktuella prislista</h3>
+      <Banner />
+      <main className={styles.main}>        
         <div className={priserStyles.priserContainer}>
           <PsPriser />
           <SwPriser />
