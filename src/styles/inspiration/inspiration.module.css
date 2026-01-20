@@ -1,0 +1,49 @@
+.inspirationGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.buttonLink {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  transition:
+    color 0.3s,
+    border-color 0.3s;
+  padding: 1rem;
+  background-color: #6abdad;
+  border: solid 2px transparent;
+  border-radius: 50px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 1rem;
+  align-self: center;
+  margin-top: 2rem;
+}
+
+.buttonLink:hover {
+  color: #a400a2;
+  border-color: #a400a2;
+}
+
+@media (max-width: 600px) {
+  .inspirationGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .buttonLink {
+    padding: 1.5rem;
+    width: 200px;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+}
