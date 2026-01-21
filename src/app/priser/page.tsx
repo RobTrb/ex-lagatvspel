@@ -10,7 +10,7 @@ export default function Priser() {
   return (
     <div className={styles.page}>
       <Banner />
-      <main className={styles.main}>        
+      <main className={styles.main}>
         <div className={priserStyles.priserContainer}>
           <PsPriser />
           <SwPriser />

@@ -9,7 +9,11 @@ interface InspirationTileProps {
   altText: string;
 }
 
-export default function InspirationTile({ smallSrc, largeSrc, altText }: InspirationTileProps) {
+export default function InspirationTile({
+  smallSrc,
+  largeSrc,
+  altText,
+}: InspirationTileProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
@@ -36,8 +40,15 @@ export default function InspirationTile({ smallSrc, largeSrc, altText }: Inspira
 
       {isModalOpen && (
         <div className={styles.modalOverlay} onClick={toggleModal}>
-          <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
-            <button className={styles.closeButton} onClick={toggleModal} aria-label="Stäng">
+          <div
+            className={styles.modalContent}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className={styles.closeButton}
+              onClick={toggleModal}
+              aria-label="Stäng"
+            >
               &times;
             </button>
             <img src={largeSrc} alt={altText} className={styles.largeImage} />
