@@ -12,7 +12,7 @@ export default function BookingBoxHome() {
         <div className={styles.contentWrapper}>
           <h2>Boka din reparation eller modifikation idag!</h2>
           <p>Enkel och snabb bokning online. Välj tid som passar dig bäst.</p>
-          <a href="/priser" className={styles.buttonLink}>
+          <a href="/tidsbokning" className={styles.buttonLink}>
             Boka tid
           </a>
         </div>

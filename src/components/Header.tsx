@@ -13,7 +13,7 @@ export default function Header() {
     <header className={styles.headerContainer}>
       <div className={styles.header}>
         <img
-          src="/img/LOGO-150x150.webp"
+          src="/img/logo-150x150.webp"
           alt="LagaTVSpel logo"
           className={styles.logo}
         />

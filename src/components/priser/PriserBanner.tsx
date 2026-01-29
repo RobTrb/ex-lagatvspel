@@ -1,13 +1,19 @@
 import styles from "@/styles/priser/priserBanner.module.css";
+import Image from "next/image";
 
 export default function PriserBanner() {
   return (
     <div className={styles.container}>
       <div className={styles.bannerContainer}>
-        <img
+        <Image
           src="/img/Banner-large.webp"
           alt="LagaTVSpel banner consoles"
           className={styles.banner}
+          width={1440}
+          height={500}          
+          priority
+          fetchPriority="high"
+          loading="eager"
         />
         <div className={styles.infoBoxOverlay}>
           <div className={styles.infoBoxRowItem}>
